@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Music Player</string>
-    <string name="HomeButton">Home</string>
-    <string name="PlayNowButton">Playing Now</string>
-    <string name="PlayListButton">Playlist</string>
+    <string name="Home">Home</string>
+    <string name="PlayNow">Playing Now</string>
+    <string name="PlayList">Playlist</string>
     <string name="Title">Music Title</string>
     <string name="artist">Artist</string>
+    <string name="title_activity_playing__now">Playing_Now</string>
 </resources>

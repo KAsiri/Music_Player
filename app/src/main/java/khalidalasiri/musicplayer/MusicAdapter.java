@@ -1,7 +1,6 @@
 package khalidalasiri.musicplayer;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,26 +17,25 @@ import java.util.ArrayList;
 public class MusicAdapter extends ArrayAdapter<Music> {
 
     public MusicAdapter(Context context, ArrayList<Music> music) {
-        super(context, 0,music);
+        super(context, 0, music);
     }
 
-    public View getView(int index, View convertView , ViewGroup parent)
-    {
+    public View getView(int index, View convertView, ViewGroup parent) {
         Music music = getItem(index);
 
-        View music_item = convertView ;
-        if(music_item == null) {
+        View music_item = convertView;
+        if (music_item == null) {
             music_item = LayoutInflater.from(getContext()).inflate(R.layout.music_item_layout, parent, false);
         }
-        ImageView image = convertView.findViewById(R.id.image);
-        TextView tilte = convertView.findViewById(R.id.tv_title);
-        TextView artsit = convertView.findViewById(R.id.tv_artist);
+        ImageView image = music_item.findViewById(R.id.image);
+        TextView tilte = music_item.findViewById(R.id.tv_title);
+        TextView artsit = music_item.findViewById(R.id.tv_artist);
 
         image.setImageResource(music.getImage_resours());
         tilte.setText(music.getMusic_title());
         artsit.setText(music.getMusic_artist());
 
-        return convertView ;
+        return music_item;
 
     }
 }
