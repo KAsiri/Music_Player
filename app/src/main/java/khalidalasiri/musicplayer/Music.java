@@ -1,7 +1,5 @@
 package khalidalasiri.musicplayer;
 
-import android.graphics.drawable.Drawable;
-
 /**
  * Created by kasir on 12/27/2017.
  */
@@ -9,15 +7,15 @@ import android.graphics.drawable.Drawable;
 public class Music
 {
     private int id ;
-    private String music_title, music_artist;
-    private int image_resours ;
+    private String musicTitle, musicArtist;
+    private int imageResours;
 
     public Music (int id, String music_title,String music_artist, int image_resours)
     {
         this.id = id ;
-        this.music_title = music_title ;
-        this.music_artist = music_artist ;
-        this.image_resours = image_resours ;
+        this.musicTitle = music_title ;
+        this.musicArtist = music_artist ;
+        this.imageResours = image_resours ;
 
     }
 
@@ -25,15 +23,15 @@ public class Music
         return id;
     }
 
-    public String getMusic_title() {
-        return music_title;
+    public String getMusicTitle() {
+        return musicTitle;
     }
 
-    public String getMusic_artist() {
-        return music_artist;
+    public String getMusicArtist() {
+        return musicArtist;
     }
 
-    public int getImage_resours() {
-        return image_resours;
+    public int getImageResours() {
+        return imageResours;
     }
 }

@@ -11,26 +11,26 @@ import java.util.ArrayList;
 
 public class Home extends AppCompatActivity {
 
-    Button bt_playlist, bt_playing_now;
+    Button btPlaylist, btPlayingNow;
     ArrayList<Music> MusicList;
-    ListView music_list;
+    ListView musicList;
     int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        music_list = findViewById(R.id.music_list);
+        musicList = findViewById(R.id.music_list);
         MusicList = new ArrayList<>();
         addNewMusic();
         MusicAdapter MA = new MusicAdapter(this, MusicList);
-        music_list.setAdapter(MA);
+        musicList.setAdapter(MA);
 
-        bt_playing_now = findViewById(R.id.bt_playing_now);
-        bt_playlist = findViewById(R.id.bt_playlist);
+        btPlayingNow = findViewById(R.id.bt_playing_now);
+        btPlaylist = findViewById(R.id.bt_playlist);
 
-        bt_playing_now.setOnClickListener(OCL);
-        bt_playlist.setOnClickListener(OCL);
+        btPlayingNow.setOnClickListener(OCL);
+        btPlaylist.setOnClickListener(OCL);
     }
 
     final View.OnClickListener OCL = new View.OnClickListener() {
@@ -47,12 +47,13 @@ public class Home extends AppCompatActivity {
                     break;
             }
 
+
         }
     };
 
     public void addNewMusic() {
-        MusicList.add(new Music(id++, "Hello", "Adele", R.drawable.hello));
-        MusicList.add(new Music(id++, "La Robama", "Rashed Al Majid", R.drawable._rashed));
-        MusicList.add(new Music(id++, "60 Dakikat Hayat", "Assala Nasri", R.drawable.asala));
+        MusicList.add(new Music(id++, getString(R.string.hello), getString(R.string.adele), R.drawable.hello));
+        MusicList.add(new Music(id++, getString(R.string.la_robama), getString(R.string.rashed), R.drawable.rashed));
+        MusicList.add(new Music(id++, getString(R.string._60DakikatHayat), getString(R.string.assalaNasri), R.drawable.asala));
     }
 }

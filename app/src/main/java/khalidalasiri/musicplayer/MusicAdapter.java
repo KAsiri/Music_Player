@@ -31,9 +31,9 @@ public class MusicAdapter extends ArrayAdapter<Music> {
         TextView tilte = music_item.findViewById(R.id.tv_title);
         TextView artsit = music_item.findViewById(R.id.tv_artist);
 
-        image.setImageResource(music.getImage_resours());
-        tilte.setText(music.getMusic_title());
-        artsit.setText(music.getMusic_artist());
+        image.setImageResource(music.getImageResours());
+        tilte.setText(music.getMusicTitle());
+        artsit.setText(music.getMusicArtist());
 
         return music_item;
 

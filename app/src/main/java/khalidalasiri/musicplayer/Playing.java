@@ -8,18 +8,18 @@ import android.widget.Button;
 
 public class Playing extends AppCompatActivity {
 
-    Button bt_home, bt_playlist;
+    Button btHome, btPlaylist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playing);
 
-        bt_home = findViewById(R.id.bt_home);
-        bt_playlist = findViewById(R.id.bt_playlist);
+        btHome = findViewById(R.id.bt_home);
+        btPlaylist = findViewById(R.id.bt_playlist);
 
-        bt_home.setOnClickListener(OCL);
-        bt_playlist.setOnClickListener(OCL);
+        btHome.setOnClickListener(OCL);
+        btPlaylist.setOnClickListener(OCL);
 
     }
 

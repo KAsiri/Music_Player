@@ -6,4 +6,10 @@
     <string name="Title">Music Title</string>
     <string name="artist">Artist</string>
     <string name="title_activity_playing__now">Playing_Now</string>
+    <string name="hello">Hello</string>
+    <string name="adele">Adele</string>
+    <string name="la_robama">La Robama</string>
+    <string name="rashed">Rashed Al Majid</string>
+    <string name="_60DakikatHayat">60 Dakikat Hayat</string>
+    <string name="assalaNasri">Assala Nasri</string>
 </resources>
